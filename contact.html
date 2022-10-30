@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="contacts.css"> 
+    </head>
+    <body>
+            <ul class="navbar">
+                <li><img id="img" src="assets/Petlogo1.png"></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a class="active" href="home.html">Home</a></li>
+        </ul>
+        <div class="form">
+            <form action="/contact.html">
+        <div class="column">
+            <div class="firstcol">
+            <p>Please fill the blanks: </p>
+            <div class="blanks">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" ><br><br>
+            <label for="email">Phone: </label>
+            <input type="text" id="phone" name="phone"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br><br>
+            </div>
+            <label for="select-box">Preferred Contact Method</label><br><br>
+            <select name="select-box" id="select-box">
+                <option value="phone">Phone</option>
+                <option value="email">Email</option>
+            </select><br><br>
+            <label for="name">Gender: </label>
+            <input type="radio" id="gender" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="gender2" name="gender" value="male">
+            <label for="male">Male</label><br><br>
+        </div>
+        </div>
+            <div class="column">
+                <div class="secondcol">
+            <label for="textarea">We look forward to hearing from you</label><br><br>
+            <div class="textarea">
+            <textarea style="resize: none;" id="comment" name="comment" rows="10" cols="60">Notes to the Doctor</textarea><br><br>
+        </div>
+            <div class="submit">
+            <button onclick="buttonFunction()" class="btn">Submit</button>
+        </div>
+        </div>
+            </div>
+        </form>
+        </div>
+        <footer class="footer">
+            <p>CSE5001<a href="https://www.iku.edu.tr/"> IKU </a>WEB PROGRAMMING 2022</p>
+</footer>
+        </body>
+        <script>
+            function buttonFunction(){
+                alert("You have submitted it successfully!!");
+            }
+        </script>
+</html>
